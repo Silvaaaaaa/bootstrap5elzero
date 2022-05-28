@@ -1,0 +1,134 @@
+:root{
+    --dark-color:#19283f ;
+    --green-color:#33d1cc;
+    --red-color:#ff3150; 
+    --yellow-color:#ffc400 ;
+    --section-color: #eff7fa; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 10000px;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-btn:hover{
+    color: var(--yellow-color);
+}
+.main-title::after{
+content: "";
+ position: absolute;
+ width: 120px ;
+ height: 2px;
+ background-color: var(--green-color);
+ bottom: -20px;
+ left: 50%;
+ transform: translateX(-50%);
+}
+/* start navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+.search {
+    border-left: 1px solid var(--green-color);
+}
+.search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler  {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar */
+/* start landing  */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* end landing  */
+/* start features  */
+.features .icon-holder{
+  height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+  font-size: 12rem ;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .feat h4{
+    color: var(--yellow-color);   
+}
+ /* end  features  */
+ /* start our work */
+ .ourwork{
+     background-color: var(--section-color)
+      }
+.ourwork ul .active{
+    background-color:var(--red-color);
+    color: var(--yellow-color);
+}
+.ourwork ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.ourwork ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.ourwork .box{
+    padding: 5px ;
+    overflow: hidden;
+    position: relative;
+}
+ /* end our work */
+/* start stuff  */
+    .stuff .description {
+        max-width: 500px;
+    }
+/* end stuff  */
+ .team h3{
+     color:var(--yellow-color); 
+     background-color: var(--green-color);
+ }
+ .project{
+     background-color: var(--dark-color);
+ }
+
+/* end  team  */
+.subscripe {
+    background-color:var(--yellow-color); 
+}
+.subscripe .inp {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscripe ::placeholder{
+    color: white; 
+}
+.subscripe input[type="submit"]{
+    background-color:var(--dark-color);
+    color: var(--yellow-color);
+}
+.footer {
+    background-color: var(--dark-color);
+}
