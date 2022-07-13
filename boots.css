@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    height: 10000px;
+    /* height: 10000px; */
 }
 .main-btn {
     background-color: var(--red-color);
